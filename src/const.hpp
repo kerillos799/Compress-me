@@ -25,7 +25,7 @@ struct compare{
         return lft->freq > rght->freq;
     }
 };
-void decoder(string text);
+void decoder(string in_file, string out_file);
 huffman* build(string text);
 void build_table(huffman* node, unordered_map<char,string> & table, string cur);
 
