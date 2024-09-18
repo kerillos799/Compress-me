@@ -28,6 +28,7 @@ struct compare{
 void decoder(string in_file, string out_file);
 huffman* build(string text);
 void build_table(huffman* node, unordered_map<char,string> & table, string cur);
+void write_encoded(string out_file, unordered_map<char,string> &table, string content);
 
 
 

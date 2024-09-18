@@ -11,4 +11,5 @@ add_executable(src
         build_huffman_tree.cpp
         decoder.cpp
         build_table.cpp
+        write_encoded.cpp
 )
