@@ -63,13 +63,6 @@ build CMakeFiles/src.dir/build_huffman_tree.cpp.obj: CXX_COMPILER__src_unscanned
   OBJECT_DIR = CMakeFiles\src.dir
   OBJECT_FILE_DIR = CMakeFiles\src.dir
 
-build CMakeFiles/src.dir/decoder.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/Compression$ tool$ project/src/decoder.cpp || cmake_object_order_depends_target_src
-  DEP_FILE = CMakeFiles\src.dir\decoder.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I"E:/Compression tool project/src/."
-  OBJECT_DIR = CMakeFiles\src.dir
-  OBJECT_FILE_DIR = CMakeFiles\src.dir
-
 build CMakeFiles/src.dir/build_table.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/Compression$ tool$ project/src/build_table.cpp || cmake_object_order_depends_target_src
   DEP_FILE = CMakeFiles\src.dir\build_table.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
@@ -84,6 +77,13 @@ build CMakeFiles/src.dir/write_encoded.cpp.obj: CXX_COMPILER__src_unscanned_Debu
   OBJECT_DIR = CMakeFiles\src.dir
   OBJECT_FILE_DIR = CMakeFiles\src.dir
 
+build CMakeFiles/src.dir/encoder.cpp.obj: CXX_COMPILER__src_unscanned_Debug E$:/Compression$ tool$ project/src/encoder.cpp || cmake_object_order_depends_target_src
+  DEP_FILE = CMakeFiles\src.dir\encoder.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"E:/Compression tool project/src/."
+  OBJECT_DIR = CMakeFiles\src.dir
+  OBJECT_FILE_DIR = CMakeFiles\src.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target src
@@ -92,7 +92,7 @@ build CMakeFiles/src.dir/write_encoded.cpp.obj: CXX_COMPILER__src_unscanned_Debu
 #############################################
 # Link the executable src.exe
 
-build src.exe: CXX_EXECUTABLE_LINKER__src_Debug CMakeFiles/src.dir/main.cpp.obj CMakeFiles/src.dir/build_huffman_tree.cpp.obj CMakeFiles/src.dir/decoder.cpp.obj CMakeFiles/src.dir/build_table.cpp.obj CMakeFiles/src.dir/write_encoded.cpp.obj
+build src.exe: CXX_EXECUTABLE_LINKER__src_Debug CMakeFiles/src.dir/main.cpp.obj CMakeFiles/src.dir/build_huffman_tree.cpp.obj CMakeFiles/src.dir/build_table.cpp.obj CMakeFiles/src.dir/write_encoded.cpp.obj CMakeFiles/src.dir/encoder.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\src.dir

@@ -9,7 +9,7 @@ add_executable(src
         const.hpp
         main.cpp
         build_huffman_tree.cpp
-        decoder.cpp
         build_table.cpp
         write_encoded.cpp
+        encoder.cpp
 )

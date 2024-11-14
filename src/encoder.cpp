@@ -4,7 +4,7 @@
 
 
 
-void decoder(string in_file, string out_file){
+void encoder(string in_file, string out_file){
     while (in_file.back() == ' ')
         in_file.pop_back();
     string extension = in_file.substr(in_file.size() - 4, 4 );

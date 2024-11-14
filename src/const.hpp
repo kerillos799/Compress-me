@@ -1,4 +1,14 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<map>
+#include <vector>
+#include <unordered_map>
+#include <string>
+#include <fstream>
+#include <queue>
+#include <bitset>
+
+
+
 using namespace std;
 
 struct huffman{
@@ -25,7 +35,7 @@ struct compare{
         return lft->freq > rght->freq;
     }
 };
-void decoder(string in_file, string out_file);
+void encoder(string in_file, string out_file);
 huffman* build(string text);
 void build_table(huffman* node, unordered_map<char,string> & table, string cur);
 void write_encoded(string out_file, unordered_map<char,string> &table, string content);

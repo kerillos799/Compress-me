@@ -10,5 +10,5 @@ int main(){
     string out_file;
     getline(cin, out_file);
     cout<<"Encoding.....\n";
-    decoder(in_file, out_file);
+    encoder(in_file, out_file);
 }
