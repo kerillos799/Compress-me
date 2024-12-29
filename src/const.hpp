@@ -6,6 +6,7 @@
 #include <fstream>
 #include <queue>
 #include <bitset>
+#include <cstdint>
 
 
 
@@ -39,6 +40,6 @@ void encoder(string in_file, string out_file);
 huffman* build(string text);
 void build_table(huffman* node, unordered_map<char,string> & table, string cur);
 void write_encoded(string out_file, unordered_map<char,string> &table, string content);
-
+void decode_file(const string& input_file, const string& output_file);
 
 

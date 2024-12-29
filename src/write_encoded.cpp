@@ -1,5 +1,4 @@
 #include "const.hpp"
-#include <cstdint>
 
 void write_encoded(string out_file, unordered_map<char,string> & table, string content){
     while (out_file.back() == ' ')

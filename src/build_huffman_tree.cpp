@@ -3,8 +3,7 @@
 huffman* build(string text){
     unordered_map<char,int> freq;
     for (char s : text) {
-        if(s != ' ' && s != '\n')
-            freq[s]++;
+        freq[s]++;
     }
     priority_queue<huffman*, vector<huffman*>, compare> pq;
     for(auto [k,v] : freq){

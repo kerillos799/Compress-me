@@ -12,4 +12,5 @@ add_executable(src
         build_table.cpp
         write_encoded.cpp
         encoder.cpp
+        decoder.cpp
 )
