@@ -2,8 +2,9 @@
 
 huffman* build(string text){
     unordered_map<char,int> freq;
-    for (char s : text)
+    for (char s : text) {
         freq[s]++;
+    }
     priority_queue<huffman*, vector<huffman*>, compare> pq;
     for(auto [k,v] : freq){
         huffman* node = new huffman(k,v);
